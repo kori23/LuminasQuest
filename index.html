@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina's Quest - A Stealth Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="menu-screen" class="screen active">
+            <h1>Lumina's Quest</h1>
+            <p>A brave firefly on a mission to rescue friends from the shadow lord</p>
+            <p class="controls">← → Arrow Keys: Move | Space: Hide/Show Light</p>
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id="level-complete-screen" class="screen">
+            <h2>Level Complete!</h2>
+            <button id="nextLevelButton">Next Level</button>
+        </div>
+        <div id="game-over-screen" class="screen">
+            <h2>Spotted by Shadows!</h2>
+            <p>The darkness has found you...</p>
+            <button id="restartButton">Try Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
