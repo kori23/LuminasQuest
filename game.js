@@ -8,18 +8,15 @@ const CONFIG = {
         width: 20,
         height: 20,
         speed: 3,
-        jumpForce: 12,
         gravity: 0.6,
         maxFallSpeed: 15,
-        lightRadius: 80,
-        hiddenLightRadius: 0
+        lightRadius: 80
     },
     shadow: {
         width: 30,
         height: 40,
         speed: 1.5,
-        detectionRange: 150,
-        viewAngle: 90
+        detectionRange: 150
     },
     tile: {
         size: 40
@@ -95,12 +92,14 @@ class Game {
         }
         this.loadLevel(this.currentLevel);
         this.gameState = 'playing';
+        this.gameLoop();
     }
     
     restartLevel() {
         this.hideAllScreens();
         this.loadLevel(this.currentLevel);
         this.gameState = 'playing';
+        this.gameLoop();
     }
     
     hideAllScreens() {

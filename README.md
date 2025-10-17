@@ -77,7 +77,7 @@ The following abilities and features can be added in future levels:
 - Longer hide duration ability
 - Faster movement speed
 - Light intensity control
-- Temporary invisiblity/dash ability
+- Temporary invisibility/dash ability
 - More complex level designs
 - Particle effects
 - Sound effects and music
